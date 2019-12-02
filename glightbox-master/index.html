@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="demo/css/style.css">
+    <link rel="stylesheet" href="dist/css/glightbox.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>GLightbox | A touchable pure Javascript lightbox</title>
+</head>
+
+<body>
+    
+
+
+
+    
+
+
+    
+
+
+    <!-- Iframes and inline example -->
+    <section class="section pair">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><i class="fa fa-window-restore heading-icon" aria-hidden="true"></i>Iframes and Inline Elements</h3>
+                    <p>You can easily add iframes by simply entering the url, it could be a web page, a video, google maps, etc. also
+                        you can display any div of your page by entering the ID in the href attribute.</p>
+
+                    <ul class="box-container three-cols">
+                        <li class="box">
+                            <div class="inner">
+                                <a href="#inline-example" class="glightbox4" data-glightbox="width: 700; height: auto;">
+                                    <img src="https://1.bp.blogspot.com/-gpeo3vHjJCg/XeFPXWX7TbI/AAAAAAAAAlQ/ur4Dbd-RG1sDdpPJc08437W9sKGydcquwCPcBGAYYCw/s1600/1_big.jpg" alt="image">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <div class="inner">
+                                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12085.977306439116!2d-73.96648875371474!3d40.77314541916876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258bf08488f6b%3A0x618706a9142daa0d!2sUpper+East+Side%2C+Nueva+York%2C+EE.+UU.!5e0!3m2!1ses-419!2smx!4v1511830027642" class="glightbox4">
+                                    <img src="demo/img/small/gm15.jpg" alt="image">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <div class="inner">
+                                <a href="demo/BigBuckBunny_320x180.mp4" class="glightbox4">
+                                    <img src="demo/img/small/gm16.jpg" alt="image">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <div id="inline-example" style="display: none; ">
+        <div class="inline-inner">
+            <h4 class="text-center">ΠΡΟΙΟΝ 50 ΜΕΓΕΝΘΥΝΣΗ ΑΦΟΥ ΚΑΤΕΥΘΥΝΕΤΕ ΤΟΝ ΚΕΡΣΟΡΑ ΠΑΝΩ ΣΤΗΝ ΕΙΚΟΝΑ</h4>
+            <p class="text-center"><object data="https://rawcdn.githack.com/themissile1234/mxshop/a2514a09546b044f56f0df394f1787c3024b0728/Performant-Image-Magnifying-Glass-Effect-With-jQuery-jZoom/demo/demo2.html" width="5200" height="600"></object></p>
+
+            <a class="gtrigger-close inline-close-btn" href="#">Close Box</a>
+        </div>
+    </div>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+    <script src="demo/js/valde.min.js"></script>
+    <script src="dist/js/glightbox.js"></script>
+    <script src="demo/js/site.js"></script>
+    <script>
+        var lightbox = GLightbox();
+        var lightboxDescription = GLightbox({
+            selector: 'glightbox2',
+        });
+        var lightboxVideo = GLightbox({
+            selector: 'glightbox3',
+        });
+        var lightboxInlineIframe = GLightbox({
+            'selector': 'glightbox4'
+        });
+    </script>
+</body>
+
+</html>
